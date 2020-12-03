@@ -7,7 +7,7 @@ type AnyFunc<T = any> = (...args: any[]) => T;
 type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;
 type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? ReturnType<T> : T> = U extends AnyClass ? InstanceType<U> : U;
 import ExportLocation from '../../../app/service/Location';
-import ExportTest from '../../../app/service/Test';
+import ExportTest from '../../../app/service/Index';
 import ExportWeather from '../../../app/service/Weather';
 
 declare module 'egg' {
