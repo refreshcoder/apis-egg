@@ -2,13 +2,13 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportHome from '../../../app/controller/home';
+import ExportIndex from '../../../app/controller/index';
 import ExportLocation from '../../../app/controller/location';
 import ExportWeather from '../../../app/controller/weather';
 
 declare module 'egg' {
   interface IController {
-    home: ExportHome;
+    index: ExportIndex;
     location: ExportLocation;
     weather: ExportWeather;
   }
